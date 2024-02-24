@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="./styles/themes.css" />
     <link rel="icon" type="image/svg+xml" href="./svg/favicon.svg" />
     <link rel="icon" href="./svg/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
     <header class="header">
       <div class="header_group">
-        <h1 class="header_title">&lt;/HTML&gt;</h1>
-        <p class="header_paragraph">Закрывающий тег</p>
+        <a class="header_title">&lt;/HTML&gt;</a>
+        <h1 class="header_paragraph">Закрывающий тег</h1>
       </div>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -566,15 +567,15 @@
             <svg class="floppy_dialog" viewBox="0 0 39 39">
               <use href="./svg/floppy.svg#floppy_id" />
             </svg>
-            <span class="dialog_text">Вставьте дискету, чтобы продолжить</span>
+            <p class="dialog_text">Вставьте дискету, чтобы продолжить</p>
           </div>
           <button
             type="button"
             onclick="window['dialog-id'].close()"
-            class="button_close"
+            class="button_close button"
             method="dialog"
           >
-            <span class="dialog_button">Ок</span>
+            <span class="button__text">Ок</span>
           </button>
         </dialog>
       </article>
