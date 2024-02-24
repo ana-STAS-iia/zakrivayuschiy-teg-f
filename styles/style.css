@@ -212,7 +212,7 @@
     -1px -1px var(--watermark-stroke-color);
 }
 
-@supports (-webkit-text-stroke: 1px var(--watermark-stroke-color)) or (text-stroke: 1px var(--watermark-stroke-color))  {
+@supports (-webkit-text-stroke: 1px var(--watermark-stroke-color)) or (text-stroke: 1px var(--watermark-stroke-color)) {
   .card_watermark {
     -webkit-text-stroke: 1px var(--watermark-stroke-color);
     text-stroke: 1px var(--watermark-stroke-color);
@@ -369,8 +369,8 @@
 
 .button_close {
   height: 38px;
+  width: 100%;
   background-color: transparent;
-  background-color: var(--background-color);
   border: 2px solid var(--accent-color);
   font-family: var(--accent-font), sans-serif;
   font-size: 14px;
@@ -385,20 +385,16 @@
 
   .card_save-button {
     flex-direction: column;
+    padding: 15px 16.5px;
+    width: 306px;
+    height: 84px;
+    margin: 0 0 102px 0;
   }
 
   .floppy {
     width: 28px;
     height: 28px;
     flex-shrink: 0;
-  }
-
-  .card_save-button {
-    padding: 15px 16.5px;
-    width: 306px;
-    height: 84px;
-    margin: 0 0 102px 0;
-    
   }
 
   .card_watermark {
