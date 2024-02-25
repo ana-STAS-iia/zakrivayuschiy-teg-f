@@ -400,6 +400,10 @@
     margin: 0 0 102px 0;
   }
 
+  .card_content {
+    padding-right: 28.95px;
+  }
+
   .floppy {
     width: 28px;
     height: 28px;
